@@ -16,9 +16,6 @@ use Spryker\Client\SecurityBlockerStorefrontCustomer\Expander\CustomerConfigurat
  */
 class SecurityBlockerStorefrontCustomerFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Client\SecurityBlockerStorefrontCustomer\Expander\CustomerConfigurationSettingsExpanderInterface
-     */
     public function createCustomerConfigurationSettingsExpander(): CustomerConfigurationSettingsExpanderInterface
     {
         return new CustomerConfigurationSettingsExpander(

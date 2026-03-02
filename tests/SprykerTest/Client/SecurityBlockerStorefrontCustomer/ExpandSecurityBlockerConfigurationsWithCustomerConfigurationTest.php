@@ -32,9 +32,6 @@ class ExpandSecurityBlockerConfigurationsWithCustomerConfigurationTest extends U
      */
     protected SecurityBlockerStorefrontCustomerClientTester $tester;
 
-    /**
-     * @return void
-     */
     public function testExpandSecurityBlockerConfigurationsWithCustomerConfigurationShouldReturnCorrectSettingTransfers(): void
     {
         // Act

@@ -17,9 +17,6 @@ class CustomerConfigurationSettingsExpander implements CustomerConfigurationSett
      */
     protected SecurityBlockerStorefrontCustomerConfig $securityBlockerStorefrontCustomerConfig;
 
-    /**
-     * @param \Spryker\Client\SecurityBlockerStorefrontCustomer\SecurityBlockerStorefrontCustomerConfig $securityBlockerStorefrontCustomerConfig
-     */
     public function __construct(SecurityBlockerStorefrontCustomerConfig $securityBlockerStorefrontCustomerConfig)
     {
         $this->securityBlockerStorefrontCustomerConfig = $securityBlockerStorefrontCustomerConfig;
