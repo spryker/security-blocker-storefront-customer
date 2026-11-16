@@ -20,4 +20,19 @@ interface SecurityBlockerStorefrontCustomerClientInterface
      * @return array<string, \Generated\Shared\Transfer\SecurityBlockerConfigurationSettingsTransfer>
      */
     public function expandSecurityBlockerConfigurationsWithCustomerConfiguration(array $securityBlockerConfigurationSettingsTransfers): array;
+
+    /**
+     * Specification:
+     * - Expands the login realm configurations with the customer realm, indexed by `SecurityBlockerStorefrontCustomerConfig::LOGIN_REALM_CUSTOMER`.
+     * - Takes the thresholds from `SecurityBlockerStorefrontCustomerConfig::getCustomerLoginRealmConfiguration()`.
+     *
+     * @api
+     *
+     * @param array<string, \Generated\Shared\Transfer\SecurityBlockerLoginRealmConfigurationTransfer> $securityBlockerLoginRealmConfigurationTransfers
+     *
+     * @return array<string, \Generated\Shared\Transfer\SecurityBlockerLoginRealmConfigurationTransfer>
+     */
+    public function expandSecurityBlockerLoginRealmConfigurationsWithCustomerLoginRealmConfiguration(
+        array $securityBlockerLoginRealmConfigurationTransfers
+    ): array;
 }

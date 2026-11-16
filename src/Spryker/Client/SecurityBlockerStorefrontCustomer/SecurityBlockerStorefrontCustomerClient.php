@@ -29,4 +29,21 @@ class SecurityBlockerStorefrontCustomerClient extends AbstractClient implements 
             ->createCustomerConfigurationSettingsExpander()
             ->expand($securityBlockerConfigurationSettingsTransfers);
     }
+
+    /**
+     * {@inheritDoc}
+     *
+     * @api
+     *
+     * @param array<string, \Generated\Shared\Transfer\SecurityBlockerLoginRealmConfigurationTransfer> $securityBlockerLoginRealmConfigurationTransfers
+     *
+     * @return array<string, \Generated\Shared\Transfer\SecurityBlockerLoginRealmConfigurationTransfer>
+     */
+    public function expandSecurityBlockerLoginRealmConfigurationsWithCustomerLoginRealmConfiguration(
+        array $securityBlockerLoginRealmConfigurationTransfers
+    ): array {
+        return $this->getFactory()
+            ->createCustomerLoginRealmConfigurationExpander()
+            ->expand($securityBlockerLoginRealmConfigurationTransfers);
+    }
 }

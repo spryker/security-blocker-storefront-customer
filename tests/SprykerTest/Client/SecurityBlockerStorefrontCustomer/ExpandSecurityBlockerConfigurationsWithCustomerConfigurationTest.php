@@ -27,9 +27,6 @@ class ExpandSecurityBlockerConfigurationsWithCustomerConfigurationTest extends U
      */
     protected const SECURITY_BLOCKER_ENTITY_TYPE = 'customer';
 
-    /**
-     * @var \SprykerTest\Client\SecurityBlockerStorefrontCustomer\SecurityBlockerStorefrontCustomerClientTester
-     */
     protected SecurityBlockerStorefrontCustomerClientTester $tester;
 
     public function testExpandSecurityBlockerConfigurationsWithCustomerConfigurationShouldReturnCorrectSettingTransfers(): void

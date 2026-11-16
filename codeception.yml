@@ -1,6 +1,7 @@
 namespace: SecurityBlockerStorefrontCustomer
 include:
     - tests/SprykerTest/Client/SecurityBlockerStorefrontCustomer
+    - tests/SprykerTest/Zed/SecurityBlockerStorefrontCustomer
 paths:
     tests: tests
     output: tests/_output

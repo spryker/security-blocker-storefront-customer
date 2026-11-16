@@ -12,9 +12,6 @@ use Spryker\Client\SecurityBlockerStorefrontCustomer\SecurityBlockerStorefrontCu
 
 class CustomerConfigurationSettingsExpander implements CustomerConfigurationSettingsExpanderInterface
 {
-    /**
-     * @var \Spryker\Client\SecurityBlockerStorefrontCustomer\SecurityBlockerStorefrontCustomerConfig
-     */
     protected SecurityBlockerStorefrontCustomerConfig $securityBlockerStorefrontCustomerConfig;
 
     public function __construct(SecurityBlockerStorefrontCustomerConfig $securityBlockerStorefrontCustomerConfig)
